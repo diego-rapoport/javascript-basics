@@ -1,0 +1,42 @@
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 10em;
+  background-color: burlywood;
+}
+
+button {
+  /* border: outset; */
+  border-radius: 50%;
+  padding: 1em;
+  width: 3.5em;
+  font-size: 1em;
+  background-color: wheat;
+  border-color: tan;
+  border-block-style: hidden;
+  background-size: 200% auto;
+}
+
+button:hover {
+  background-position: right center;
+  background-image: linear-gradient(to right, #deb999 0%, #deb887 51%, #ffb887 70%);
+  transition: 0.7s
+}
+
+#contador {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#contadorTitulo {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding:1.2em;
+}
+
+#blocoContador {
+  display: flex;
+  height: 3em;
+  justify-content: center;
+  align-items: center;
+}
