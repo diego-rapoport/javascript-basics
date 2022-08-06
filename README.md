@@ -1,4 +1,5 @@
 # Exercícios básicos de Javascript!!
 
 - [x] contador
-- [ ] tarefas
+- [x] tarefas
+- [ ] conta bancária (POO)
