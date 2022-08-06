@@ -2,4 +2,4 @@
 
 - [x] contador
 - [x] tarefas
-- [ ] conta bancária (POO)
+- [x] conta bancária (POO)
