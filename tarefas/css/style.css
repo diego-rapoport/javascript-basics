@@ -1,0 +1,57 @@
+
+body {
+  align-items: center;
+}
+
+h1 {
+  margin-left:50%;
+  margin-right:50%;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  bottom: 0;
+  margin-top: 60%;
+  align-content: space-between;
+}
+
+.tarefas-topo {
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.divTarefa {
+  justify-content:center;
+  align-items: center;
+  height: 2em;
+}
+
+.total {
+  display: flex;
+  margin-right: 2em;
+  font-size: larger;
+}
+
+.botaoResetar {
+  width: 20%;
+  float: inline-end;
+}
+
+#tarefasFeitas {
+  margin-left: 0.5em;
+}
+
+#tarefasNaoFeitas {
+  margin-left: 0.5em;
+}
+
+#listaTarefas {
+  margin-top: 2em;
+}
+
+#tarefa {
+  margin-right: 1em
+}
