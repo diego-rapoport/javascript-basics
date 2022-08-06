@@ -1,4 +1,4 @@
-# Desafio proposto pela @stebnusch
+# Desafio proposto pela @stebsnusch 
 
 ![Tela principal](Gif1.gif)
 
