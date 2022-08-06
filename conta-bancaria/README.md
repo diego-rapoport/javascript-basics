@@ -4,10 +4,23 @@
 ### Exemplo de Contas bancárias com herança
 
 ```mermaid
-graph TD;
-  ContaBancaria-->ContaCorrente
-  ContaBancaria-->ContaPoupanca
-  ContaBancaria-->ContaUniversitaria
+%% graph TD;
+classDiagram
+  ContaBancaria <|-- ContaCorrente
+  ContaBancaria <|-- ContaPoupanca
+  ContaBancaria <|-- ContaUniversitaria
+  ContaBancaria : +String agencia
+  ContaBancaria : +int numero
+  ContaBancaria : +String tipo
+  ContaBancaria : +int saldo
+  ContaBancaria : +sacar(valor) int
+  ContaBancaria : +depositar(valor) int
+  class ContaCorrente {
+    +int cartaoCredito
+  }
+  %% ContaBancaria-->ContaCorrente
+  %% ContaBancaria-->ContaPoupanca
+  %% ContaBancaria-->ContaUniversitaria
 ```
 
 ### Ideias
