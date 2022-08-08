@@ -23,7 +23,6 @@ function criaTarefa(tarefa) {
     } else {
       mudaFeitas(true)
       tarefa.style['text-decoration'] = 'line-through'
-      // tarefa.setAttribute('feito', true)
     }
 
   })
@@ -41,6 +40,7 @@ function criaTarefa(tarefa) {
   divTarefa.appendChild(novaDiv)
 
   mudaFeitas(false)
+  tarefa.innerHTML = ''
 }
 
 document.getElementById('deletarFeitas').addEventListener('click', function deletar() {
@@ -55,6 +55,7 @@ document.getElementById('deletarFeitas').addEventListener('click', function dele
 })
 
 document.getElementById("adicionarBotao").addEventListener('click', function adicionar() {
-  let tarefa = document.getElementById('tarefa').value
-  criaTarefa(tarefa)
+  let tarefa = document.getElementById('tarefa')
+  criaTarefa(tarefa.value)
+  tarefa.value = ''
 })

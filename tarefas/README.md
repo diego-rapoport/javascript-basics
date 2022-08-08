@@ -3,7 +3,7 @@
 ![Tela principal](Gif1.gif)
 
 ### Ideias
-- [ ] Limpar input depois de adicionar tarefa
+- [x] Limpar input depois de adicionar tarefa
 - [ ] Colocar tarefas numa caixa
 - [ ] Mudar estilo dos botões
 - [ ] Adicionar cores
