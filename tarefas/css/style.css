@@ -1,16 +1,22 @@
 
 body {
   align-items: center;
+  background-color: #121513;
 }
 
 h1 {
   margin-left:50%;
   margin-right:50%;
   font-size: 2.4em;
+  color: #deffde;
 }
 
 button {
   font-size: 1.3em;
+  border-radius: 0.3em;
+  border-spacing: 2em;
+  border-block-style: groove;
+  border-color: gray;
 }
 
 footer {
@@ -22,11 +28,16 @@ footer {
   align-content: space-between;
 }
 
+p {
+  color: whitesmoke;
+}
+
 .tarefas-topo {
   display:flex;
   justify-content:center;
   align-items: center;
   height: 5em;
+  padding-left: 7em;
 }
 
 .divTarefa {
@@ -64,6 +75,20 @@ footer {
   margin-right: 1em
 }
 
-#deletarTarefas {
+#deletarFeitas {
   font-size: 1.2em;
+  background-color: #339955;
+}
+
+#deletarFeitas:hover {
+  font-size: 1.2em;
+  background-color: #99ff99;
+}
+
+#adicionarBotao {
+  background-color: #35ca99;
+}
+
+#adicionarBotao:hover {
+  background-color: #99ff99;
 }
