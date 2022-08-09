@@ -5,8 +5,8 @@
 ### Ideias
 - [x] Limpar input depois de adicionar tarefa
 - [ ] Colocar tarefas numa caixa
-- [ ] Mudar estilo dos botões
-- [ ] Adicionar cores
+- [x] Mudar estilo dos botões
+- [x] Adicionar cores
 - [ ] Usar localStorage pra manter tarefas na sessão
 - [ ] Criar botão de editar tarefa
 - [ ] Criar timer pra cada tarefa
