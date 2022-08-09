@@ -92,3 +92,46 @@ p {
 #adicionarBotao:hover {
   background-color: #99ff99;
 }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.7);
+  animation: scaleup 0.2s ease-in;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+.modal-text {
+  color: black;
+}
+
+.modal-close-button {
+    position: absolute;
+    background-color: #003a0c;
+    padding: 0.2em 0.5em;
+    border-radius: 50%;
+    color: #fff;
+    right: -20px;
+    top: -20px;
+    cursor: pointer;
+}
+
+.show-modal {
+    display: block;
+}
