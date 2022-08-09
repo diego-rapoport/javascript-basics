@@ -10,5 +10,6 @@
 - [ ] Usar localStorage pra manter tarefas na sessão
 - [ ] Criar botão de editar tarefa
 - [ ] Criar timer pra cada tarefa
+- [x] Criar modal para mensagem
 
 
