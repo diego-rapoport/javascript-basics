@@ -56,6 +56,40 @@ document.getElementById('deletarFeitas').addEventListener('click', function dele
 
 document.getElementById("adicionarBotao").addEventListener('click', function adicionar() {
   let tarefa = document.getElementById('tarefa')
-  criaTarefa(tarefa.value)
-  tarefa.value = ''
+  if (!tarefa.value) {
+    const modal1 = document.getElementById('modal1')
+    modal1.classList.toggle('show-modal')
+    const modalClose = document.getElementById('modal-close-button')
+    modalClose.addEventListener('click', () => {
+      modal1.classList.remove('show-modal')
+    })
+  } else {
+    criaTarefa(tarefa.value)
+    tarefa.value = ''
+  }
 })
+
+var modals = document.querySelectorAll(".modal-open");
+
+modals.forEach((element) => {
+  //Add click listeners to open-modal buttons
+  element.addEventListener("click", () => {
+
+    //Get the unique popup modal for that button
+    var popupModal = document.getElementById(element.dataset.popupTrigger);
+
+    //Select the close button of current popup modal
+    var popupModalCloseButton = document
+      .getElementById(element.dataset.popupTrigger)
+      .getElementsByClassName("modal-close-button")[0];
+
+    // Show/hide modal on click by toggling the class
+    popupModal.classList.toggle("show-modal");
+
+    //Add event listener to close button on popup modal.
+    popupModalCloseButton.addEventListener("click", () => {
+      popupModal.classList.remove("show-modal");
+    });
+
+  });
+});
